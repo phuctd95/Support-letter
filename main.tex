@@ -1,0 +1,63 @@
+%% Inicio del archivo `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% Este trabajo puede ser distribuido o modificado bajo las 
+% condiciones de la LaTeX Project Public License V1.3c, 
+% disponible en http://www.latex-project.org/lppl/.
+%
+% Traducción al Español por Fausto M. Lagos (piratax007@protonmail.ch), 2016.
+
+
+\documentclass[18pt,a4paper,sans]{moderncv}        % posibles opciones de tamaño de fuente ('10pt', '11pt' and '12pt'), papel ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') y familia de fuentes ('sans' and 'roman')
+
+% temas moderncv
+\moderncvstyle{casual}                             % Los estilos disponibles son 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % las opciones de color son 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % descomentar al inicio de la línea para definir la fuente por defecto; use '\sfdefault' para sans serif por defecto, '\rmdefault' para roman, o cualquier otro nombre de fuente instalada en sus sistema
+%\nopagenumbers{}                                  % descomente para eliminar el numerado automático de las páginas en cartas de más de una página
+
+% Codificación de carácteres
+\usepackage[utf8]{inputenc}                        % Si no esta usando xelatex o lualatex, remplace por la codificación que este usando
+%\usepackage{CJKutf8}                              % descomente si necesita usar CJK para escribir su carta en Chino, Japones or Koreano
+\usepackage[spanish, english]{babel}			   % comentar si su carta esta escrita en un idioma diferente del Español
+
+% Configuración de márgenes
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % descomente si quiere modificar el ancho de columna para la fecha
+%\setlength{\makecvtitlenamewidth}{10cm}           % para el estilo 'classic', si quiere forzar el ancho del nombre. la longitud es normalmente calculada para evitar sobrelapamientos con su información personal; descomente esta línea bajo su propio riesgo
+
+% Información personal
+\name{Hong-Sheng}{Zhou}
+\title{Resumé title}                               % opcional, remover o comentar si no 
+
+% para mostrar etiquetas numéricas en la bibliografía (por defecto no se muestran etiquecas); descomente las siguientes líneas solo si usa referencias bibliográficas en su carta
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]} % Considere reemplazar la línea 44 con esta
+
+% bibliografía con múltiples entradas
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            contenido
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       carta       ---------------------------------------------------------
+% Datos del destinatario
+\recipient{Support letter}{Outstanding Early-career Student Researcher Award}
+% \date{fecha}
+\opening{Dear the Department of Computer Science,}
+\closing{Best regards,}
+
+\makelettertitle
+
+I am writing this letter to recommend my student, Phuc Thai, to the Outstanding Early-career Student Researcher Award. 
+
+Phuc has joined the Ph.D program at VCU since last Fall. Before he came here, he did not know much about blockchain or cryptocurrency. However, he has a solid foundation in terms of research skills gained through his college time and industrial work. Phuc has the ability to work independently and quickly understand difficult concepts and subjects. He is also excellent at finding the root cause of a problem and is full of creative ideas and solutions. As a result, we have a paper accepted at DLoT2018 (co-located with EAI Mobiquitous 2018). 
+
+While working with Phuc, I have seen that he is smart, hardworking, diligent and dependable. I believe he has qualities to win this award
+
+\makeletterclosing
+
+\end{document}
